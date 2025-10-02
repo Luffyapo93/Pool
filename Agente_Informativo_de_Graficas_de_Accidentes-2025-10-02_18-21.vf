@@ -1,0 +1,4529 @@
+{
+  "version": {
+    "_version": 13.03,
+    "autoSaveFromRestore": false,
+    "canvasTemplates": [],
+    "components": [],
+    "creatorID": 1772631,
+    "manualSave": false,
+    "model": {
+      "modelID": "68d4b0958662aeadf68febd5"
+    },
+    "name": "Initial Version",
+    "platformData": {
+      "slots": [
+        {
+          "key": "68d2152afdf725db2fd41a24",
+          "name": "ano_inicio",
+          "color": "#6fa690",
+          "inputs": [
+            "2015",
+            "2016",
+            "2018",
+            "2017",
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024"
+          ],
+          "type": {
+            "value": "VF.NUMBER"
+          }
+        },
+        {
+          "key": "68d21544fdf725db2fd41a27",
+          "name": "ano_fin",
+          "color": "#56B365",
+          "inputs": [
+            "2015",
+            "2016",
+            "2017",
+            "2018",
+            "2019",
+            "2020",
+            "2024",
+            "2021",
+            "2022",
+            "2023"
+          ],
+          "type": {
+            "value": "VF.NUMBER"
+          }
+        },
+        {
+          "key": "68d21fd4fdf725db2fd41fbc",
+          "name": "solo_un_ano",
+          "color": "#56B365",
+          "inputs": [],
+          "type": {
+            "value": "VF.NUMBER"
+          }
+        },
+        {
+          "key": "68d2202dfdf725db2fd42010",
+          "name": "grafico_url",
+          "color": "#71a59e",
+          "inputs": [],
+          "type": {
+            "value": "Custom"
+          }
+        },
+        {
+          "key": "68d22142fdf725db2fd420d0",
+          "name": "grafico_mensaje",
+          "color": "#5B9FD7",
+          "inputs": [],
+          "type": {
+            "value": "Custom"
+          }
+        },
+        {
+          "key": "68d3ff0391c5ab19193c5b8b",
+          "name": "departamento1",
+          "color": "#5B9FD7",
+          "inputs": [],
+          "type": {
+            "value": "Custom"
+          }
+        },
+        {
+          "key": "68d4044791c5ab19193c605c",
+          "name": "departamentos_formateados",
+          "color": "#71a59e",
+          "inputs": [],
+          "type": {
+            "value": "VF.GEOGRAPHY"
+          }
+        },
+        {
+          "key": "68d4065e91c5ab19193c60f9",
+          "name": "solo",
+          "color": "#DC8879",
+          "inputs": [],
+          "type": {
+            "value": "VF.NAME"
+          }
+        },
+        {
+          "key": "68d20c50fdf725db2fd41853",
+          "name": "departamento",
+          "color": "#56B365",
+          "inputs": [
+            "TODOS,todos,Todos,todo,Todo,TODO",
+            "UCAYALI,ucayali,Ucayali",
+            "TUMBES,tumbes,Tumbes",
+            "TACNA,tacna,Tacna",
+            "LAMBAYEQUE,lambayeque,Lambayeque",
+            "LA LIBERTAD,la libertad,La Libertad,La libertad,la Libertad",
+            "JUNIN,junin,Junin,Junín,junín",
+            "ICA,ica,Ica",
+            "HUANUCO,huanuco,Huanuco",
+            "HUANCAVELICA,huancavelica,Huancavelica",
+            "CUSCO,cusco,Cusco",
+            "CALLAO,callao,Callao",
+            "CAJAMARCA,cajamarca,Cajamarca",
+            "AYACUCHO,ayacucho,Ayacucho",
+            "AREQUIPA,arequipa,Arequipa",
+            "APURIMAC,apurimac,Apurimac",
+            "ANCASH,ancash,Ancash",
+            "AMAZONAS,amazonas,Amazonas",
+            "LIMA,lima,Lima",
+            "LORETO,loreto,Loreto",
+            "PASCO,pasco,Pasco",
+            "PUNO,puno,Puno",
+            "MADRE DE DIOS,madre de dios,Madre De Dios,Madre de Dios,Madre de dios",
+            "MOQUEGUA,moquegua,Moquegua",
+            "PIURA,piura,Piura",
+            "SAN MARTIN,san martin,san martín,San Martin,San Martín,San martin,San martín"
+          ],
+          "type": {
+            "value": "Custom"
+          }
+        },
+        {
+          "key": "68d425c191c5ab19193c7249",
+          "name": "tipo_grafico",
+          "color": "#d182b6",
+          "inputs": [],
+          "type": {
+            "value": "VF.NAME"
+          }
+        }
+      ],
+      "intents": [
+        {
+          "key": "None",
+          "name": "None",
+          "slots": [],
+          "inputs": [],
+          "noteID": null
+        },
+        {
+          "key": "68c0bdc3776dfb451768f7bb",
+          "name": "obtener_precio",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Dame el precio de una acción",
+              "slots": []
+            },
+            {
+              "text": "Quiero saber la cotización",
+              "slots": []
+            },
+            {
+              "text": "Precio de una empresa",
+              "slots": []
+            }
+          ],
+          "noteID": "3mela0cst",
+          "description": "Esta intención se activa cuando el usuario pregunta por el precio o la cotización de una acción de una empresa."
+        },
+        {
+          "key": "68d41e0191c5ab19193c6d52",
+          "name": "barras",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "barras, bar chart",
+              "slots": []
+            }
+          ],
+          "noteID": "3melb0cqo",
+          "description": "El usuario quiere ver un gráfico de barras"
+        },
+        {
+          "key": "68d41e2c91c5ab19193c6d9e",
+          "name": "pastel",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "pastel, pie chart",
+              "slots": []
+            }
+          ],
+          "noteID": "3melc0cq0",
+          "description": "El usuario quiere ver un Grafico Pastel"
+        },
+        {
+          "key": "68d41e6a91c5ab19193c6dc9",
+          "name": "lineal",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "lineal, line chart",
+              "slots": []
+            }
+          ],
+          "noteID": "3meld0c60",
+          "description": "El usuario quiere ver Grafico Lineal"
+        }
+      ],
+      "settings": {
+        "restart": true,
+        "repeat": 100,
+        "locales": [
+          "en-US"
+        ],
+        "globalNoMatch": {
+          "type": "static",
+          "prompt": {
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "Sorry, I didn’t get that. Please try again."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "messageDelay": {
+          "durationMilliseconds": 500
+        },
+        "defaultVoice": "elevenlabs:eleven_turbo_v2_5:ZF6FPAbjXT4488VcRRnw",
+        "deepgramASR": {
+          "silenceWaitMS": 10,
+          "punctuationWaitMS": 200,
+          "partialWaitMS": 1000,
+          "interruptionWaitWords": 1,
+          "audioCue": null
+        }
+      },
+      "publishing": {
+        "avatar": "https://cdn.voiceflow.com/assets/logo.png",
+        "color": "#397DFF",
+        "description": "Hi, how can I help you today?",
+        "feedback": false,
+        "image": "https://cdn.voiceflow.com/assets/logo.png",
+        "persistence": "localStorage",
+        "position": "right",
+        "spacing": {
+          "side": 24,
+          "bottom": 24
+        },
+        "title": "Your AI agent",
+        "watermark": true,
+        "audioInterface": true
+      },
+      "platform": "webchat"
+    },
+    "programResources": {
+      "agents": {},
+      "prompts": {
+        "68c184bc5276695054c8fd03": {
+          "settings": {
+            "useStructuredOutput": false,
+            "model": "claude-4-sonnet",
+            "maxTokens": 5000,
+            "temperature": 0.3
+          },
+          "system": "",
+          "messages": [
+            {
+              "role": "user",
+              "content": ""
+            }
+          ]
+        }
+      },
+      "apiTools": {},
+      "messages": {
+        "68d20daefdf725db2fd418c5": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "👋 ¡Bienvenido al Asistente de Accidentes de Tránsito!\nAquí podrás consultar y generar gráficas comparativas de los accidentes registrados en distintos departamentos del país.\n\n¿De que departamentos deseas ver la información"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68d20e33fdf725db2fd418f5": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "¿Desde qué año quieres comenzar la consulta?"
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": "Tenemos información disponible del 2015 hasta el 2024."
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68d2163bfdf725db2fd41a64": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "¿Hasta qué año quieres comparar? Si solo quieres un año, dime el mismo."
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68d22163fdf725db2fd420e7": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "text": "{grafico_mensaje}"
+                        },
+                        {
+                          "text": " "
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68d419e491c5ab19193c6b91": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "¿En qué tipo de grafico deseas ver la información?(Barras, Pastel, Lineal)"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        }
+      },
+      "integrationTools": {},
+      "mcpIntegrationTools": {}
+    },
+    "prototype": {
+      "type": "chat",
+      "data": {
+        "name": "Agente Informativo de Graficas de Accidentes",
+        "locales": [
+          "en-US"
+        ]
+      },
+      "model": {
+        "intents": [
+          {
+            "key": "68c0bdc3776dfb451768f7bb",
+            "name": "obtener_precio",
+            "slots": [],
+            "inputs": [
+              {
+                "text": "Dame el precio de una acción",
+                "slots": []
+              },
+              {
+                "text": "Quiero saber la cotización",
+                "slots": []
+              },
+              {
+                "text": "Precio de una empresa",
+                "slots": []
+              }
+            ],
+            "noteID": "3mela0cst",
+            "description": "Esta intención se activa cuando el usuario pregunta por el precio o la cotización de una acción de una empresa."
+          },
+          {
+            "key": "capture_departamento_pgpnaee",
+            "name": "capture_departamento_pgpnaee",
+            "slots": [
+              {
+                "id": "68d20c50fdf725db2fd41853",
+                "required": true,
+                "dialog": {
+                  "confirm": [],
+                  "prompt": [],
+                  "utterances": [
+                    {
+                      "text": "{{[departamento].68d20c50fdf725db2fd41853}}",
+                      "slots": [
+                        "68d20c50fdf725db2fd41853"
+                      ]
+                    }
+                  ],
+                  "confirmEnabled": false
+                }
+              }
+            ],
+            "inputs": []
+          },
+          {
+            "key": "capture_ano_inicio_hacnplao",
+            "name": "capture_ano_inicio_hacnplao",
+            "slots": [
+              {
+                "id": "68d2152afdf725db2fd41a24",
+                "required": true,
+                "dialog": {
+                  "confirm": [],
+                  "prompt": [],
+                  "utterances": [
+                    {
+                      "text": "{{[ano_inicio].68d2152afdf725db2fd41a24}}",
+                      "slots": [
+                        "68d2152afdf725db2fd41a24"
+                      ]
+                    }
+                  ],
+                  "confirmEnabled": false
+                }
+              }
+            ],
+            "inputs": []
+          },
+          {
+            "key": "capture_ano_fin_nggignhg",
+            "name": "capture_ano_fin_nggignhg",
+            "slots": [
+              {
+                "id": "68d21544fdf725db2fd41a27",
+                "required": true,
+                "dialog": {
+                  "confirm": [],
+                  "prompt": [],
+                  "utterances": [
+                    {
+                      "text": "{{[ano_fin].68d21544fdf725db2fd41a27}}",
+                      "slots": [
+                        "68d21544fdf725db2fd41a27"
+                      ]
+                    }
+                  ],
+                  "confirmEnabled": false
+                }
+              }
+            ],
+            "inputs": []
+          },
+          {
+            "key": "capture_solo_jdhoieec",
+            "name": "capture_solo_jdhoieec",
+            "slots": [
+              {
+                "id": "68d4065e91c5ab19193c60f9",
+                "required": true,
+                "dialog": {
+                  "confirm": [],
+                  "prompt": [],
+                  "utterances": [
+                    {
+                      "text": "{{[solo].68d4065e91c5ab19193c60f9}}",
+                      "slots": [
+                        "68d4065e91c5ab19193c60f9"
+                      ]
+                    }
+                  ],
+                  "confirmEnabled": false
+                }
+              }
+            ],
+            "inputs": []
+          },
+          {
+            "key": "capture_tipo_grafico_naplfani",
+            "name": "capture_tipo_grafico_naplfani",
+            "slots": [
+              {
+                "id": "68d425c191c5ab19193c7249",
+                "required": true,
+                "dialog": {
+                  "confirm": [],
+                  "prompt": [],
+                  "utterances": [
+                    {
+                      "text": "{{[tipo_grafico].68d425c191c5ab19193c7249}}",
+                      "slots": [
+                        "68d425c191c5ab19193c7249"
+                      ]
+                    }
+                  ],
+                  "confirmEnabled": false
+                }
+              }
+            ],
+            "inputs": []
+          },
+          {
+            "key": "None",
+            "name": "None",
+            "slots": [],
+            "inputs": [
+              {
+                "text": "None"
+              }
+            ],
+            "noteID": null
+          }
+        ],
+        "slots": [
+          {
+            "key": "68d2152afdf725db2fd41a24",
+            "name": "ano_inicio",
+            "color": "#6fa690",
+            "inputs": [
+              "2015",
+              "2016",
+              "2018",
+              "2017",
+              "2019",
+              "2020",
+              "2021",
+              "2022",
+              "2023",
+              "2024"
+            ],
+            "type": {
+              "value": "VF.NUMBER"
+            },
+            "description": null
+          },
+          {
+            "key": "68d21544fdf725db2fd41a27",
+            "name": "ano_fin",
+            "color": "#56B365",
+            "inputs": [
+              "2015",
+              "2016",
+              "2017",
+              "2018",
+              "2019",
+              "2020",
+              "2024",
+              "2021",
+              "2022",
+              "2023"
+            ],
+            "type": {
+              "value": "VF.NUMBER"
+            },
+            "description": null
+          },
+          {
+            "key": "68d21fd4fdf725db2fd41fbc",
+            "name": "solo_un_ano",
+            "color": "#56B365",
+            "inputs": [],
+            "type": {
+              "value": "VF.NUMBER"
+            },
+            "description": null
+          },
+          {
+            "key": "68d2202dfdf725db2fd42010",
+            "name": "grafico_url",
+            "color": "#71a59e",
+            "inputs": [],
+            "type": {
+              "value": "Custom"
+            },
+            "description": null
+          },
+          {
+            "key": "68d22142fdf725db2fd420d0",
+            "name": "grafico_mensaje",
+            "color": "#5B9FD7",
+            "inputs": [],
+            "type": {
+              "value": "Custom"
+            },
+            "description": null
+          },
+          {
+            "key": "68d3ff0391c5ab19193c5b8b",
+            "name": "departamento1",
+            "color": "#5B9FD7",
+            "inputs": [],
+            "type": {
+              "value": "Custom"
+            },
+            "description": null
+          },
+          {
+            "key": "68d4044791c5ab19193c605c",
+            "name": "departamentos_formateados",
+            "color": "#71a59e",
+            "inputs": [],
+            "type": {
+              "value": "VF.GEOGRAPHY"
+            },
+            "description": null
+          },
+          {
+            "key": "68d4065e91c5ab19193c60f9",
+            "name": "solo",
+            "color": "#DC8879",
+            "inputs": [],
+            "type": {
+              "value": "VF.NAME"
+            },
+            "description": null
+          },
+          {
+            "key": "68d20c50fdf725db2fd41853",
+            "name": "departamento",
+            "color": "#56B365",
+            "inputs": [
+              "TODOS,todos,Todos,todo,Todo,TODO",
+              "UCAYALI,ucayali,Ucayali",
+              "TUMBES,tumbes,Tumbes",
+              "TACNA,tacna,Tacna",
+              "LAMBAYEQUE,lambayeque,Lambayeque",
+              "LA LIBERTAD,la libertad,La Libertad,La libertad,la Libertad",
+              "JUNIN,junin,Junin,Junín,junín",
+              "ICA,ica,Ica",
+              "HUANUCO,huanuco,Huanuco",
+              "HUANCAVELICA,huancavelica,Huancavelica",
+              "CUSCO,cusco,Cusco",
+              "CALLAO,callao,Callao",
+              "CAJAMARCA,cajamarca,Cajamarca",
+              "AYACUCHO,ayacucho,Ayacucho",
+              "AREQUIPA,arequipa,Arequipa",
+              "APURIMAC,apurimac,Apurimac",
+              "ANCASH,ancash,Ancash",
+              "AMAZONAS,amazonas,Amazonas",
+              "LIMA,lima,Lima",
+              "LORETO,loreto,Loreto",
+              "PASCO,pasco,Pasco",
+              "PUNO,puno,Puno",
+              "MADRE DE DIOS,madre de dios,Madre De Dios,Madre de Dios,Madre de dios",
+              "MOQUEGUA,moquegua,Moquegua",
+              "PIURA,piura,Piura",
+              "SAN MARTIN,san martin,san martín,San Martin,San Martín,San martin,San martín"
+            ],
+            "type": {
+              "value": "Custom"
+            },
+            "description": null
+          },
+          {
+            "key": "68d425c191c5ab19193c7249",
+            "name": "tipo_grafico",
+            "color": "#d182b6",
+            "inputs": [],
+            "type": {
+              "value": "VF.NAME"
+            },
+            "description": null
+          }
+        ]
+      },
+      "context": {
+        "stack": [
+          {
+            "diagramID": "68c0b73a68a36a00076fc3e0",
+            "storage": {},
+            "variables": {}
+          }
+        ],
+        "variables": {}
+      },
+      "surveyorContext": {
+        "nonDraftResponsesMap": {},
+        "responseMessagesByDiscriminatorIDMap": {},
+        "responseDiscriminatorsByResponseIDMap": {},
+        "agentMcpIntegrationToolsByAgentIDMap": {},
+        "functionDefinitions": {},
+        "referencedResponseIDs": [
+          "68d20daefdf725db2fd418c5",
+          "68d20e33fdf725db2fd418f5",
+          "68d2163bfdf725db2fd41a64",
+          "68d22163fdf725db2fd420e7",
+          "68d419e491c5ab19193c6b91"
+        ],
+        "referencedAgentsIDs": [],
+        "referencedAPIToolIDs": [],
+        "referencedIntegrationToolIDs": [],
+        "slotsMap": {
+          "68d2152afdf725db2fd41a24": {
+            "key": "68d2152afdf725db2fd41a24",
+            "name": "ano_inicio",
+            "color": "#6fa690",
+            "inputs": [
+              "2015",
+              "2016",
+              "2018",
+              "2017",
+              "2019",
+              "2020",
+              "2021",
+              "2022",
+              "2023",
+              "2024"
+            ],
+            "type": {
+              "value": "VF.NUMBER"
+            }
+          },
+          "68d21544fdf725db2fd41a27": {
+            "key": "68d21544fdf725db2fd41a27",
+            "name": "ano_fin",
+            "color": "#56B365",
+            "inputs": [
+              "2015",
+              "2016",
+              "2017",
+              "2018",
+              "2019",
+              "2020",
+              "2024",
+              "2021",
+              "2022",
+              "2023"
+            ],
+            "type": {
+              "value": "VF.NUMBER"
+            }
+          },
+          "68d21fd4fdf725db2fd41fbc": {
+            "key": "68d21fd4fdf725db2fd41fbc",
+            "name": "solo_un_ano",
+            "color": "#56B365",
+            "inputs": [],
+            "type": {
+              "value": "VF.NUMBER"
+            }
+          },
+          "68d2202dfdf725db2fd42010": {
+            "key": "68d2202dfdf725db2fd42010",
+            "name": "grafico_url",
+            "color": "#71a59e",
+            "inputs": [],
+            "type": {
+              "value": "Custom"
+            }
+          },
+          "68d22142fdf725db2fd420d0": {
+            "key": "68d22142fdf725db2fd420d0",
+            "name": "grafico_mensaje",
+            "color": "#5B9FD7",
+            "inputs": [],
+            "type": {
+              "value": "Custom"
+            }
+          },
+          "68d3ff0391c5ab19193c5b8b": {
+            "key": "68d3ff0391c5ab19193c5b8b",
+            "name": "departamento1",
+            "color": "#5B9FD7",
+            "inputs": [],
+            "type": {
+              "value": "Custom"
+            }
+          },
+          "68d4044791c5ab19193c605c": {
+            "key": "68d4044791c5ab19193c605c",
+            "name": "departamentos_formateados",
+            "color": "#71a59e",
+            "inputs": [],
+            "type": {
+              "value": "VF.GEOGRAPHY"
+            }
+          },
+          "68d4065e91c5ab19193c60f9": {
+            "key": "68d4065e91c5ab19193c60f9",
+            "name": "solo",
+            "color": "#DC8879",
+            "inputs": [],
+            "type": {
+              "value": "VF.NAME"
+            }
+          },
+          "68d20c50fdf725db2fd41853": {
+            "key": "68d20c50fdf725db2fd41853",
+            "name": "departamento",
+            "color": "#56B365",
+            "inputs": [
+              "TODOS,todos,Todos,todo,Todo,TODO",
+              "UCAYALI,ucayali,Ucayali",
+              "TUMBES,tumbes,Tumbes",
+              "TACNA,tacna,Tacna",
+              "LAMBAYEQUE,lambayeque,Lambayeque",
+              "LA LIBERTAD,la libertad,La Libertad,La libertad,la Libertad",
+              "JUNIN,junin,Junin,Junín,junín",
+              "ICA,ica,Ica",
+              "HUANUCO,huanuco,Huanuco",
+              "HUANCAVELICA,huancavelica,Huancavelica",
+              "CUSCO,cusco,Cusco",
+              "CALLAO,callao,Callao",
+              "CAJAMARCA,cajamarca,Cajamarca",
+              "AYACUCHO,ayacucho,Ayacucho",
+              "AREQUIPA,arequipa,Arequipa",
+              "APURIMAC,apurimac,Apurimac",
+              "ANCASH,ancash,Ancash",
+              "AMAZONAS,amazonas,Amazonas",
+              "LIMA,lima,Lima",
+              "LORETO,loreto,Loreto",
+              "PASCO,pasco,Pasco",
+              "PUNO,puno,Puno",
+              "MADRE DE DIOS,madre de dios,Madre De Dios,Madre de Dios,Madre de dios",
+              "MOQUEGUA,moquegua,Moquegua",
+              "PIURA,piura,Piura",
+              "SAN MARTIN,san martin,san martín,San Martin,San Martín,San martin,San martín"
+            ],
+            "type": {
+              "value": "Custom"
+            }
+          },
+          "68d425c191c5ab19193c7249": {
+            "key": "68d425c191c5ab19193c7249",
+            "name": "tipo_grafico",
+            "color": "#d182b6",
+            "inputs": [],
+            "type": {
+              "value": "VF.NAME"
+            }
+          }
+        },
+        "platform": "webchat",
+        "products": {},
+        "extraSlots": [],
+        "interfaces": [],
+        "permissions": [],
+        "projectType": "chat",
+        "extraIntents": [
+          {
+            "key": "capture_departamento_pgpnaee",
+            "name": "capture_departamento_pgpnaee",
+            "slots": [
+              {
+                "id": "68d20c50fdf725db2fd41853",
+                "required": true,
+                "dialog": {
+                  "confirm": [],
+                  "prompt": [],
+                  "utterances": [
+                    {
+                      "text": "{{[departamento].68d20c50fdf725db2fd41853}}",
+                      "slots": [
+                        "68d20c50fdf725db2fd41853"
+                      ]
+                    }
+                  ],
+                  "confirmEnabled": false
+                }
+              }
+            ],
+            "inputs": []
+          },
+          {
+            "key": "capture_ano_inicio_hacnplao",
+            "name": "capture_ano_inicio_hacnplao",
+            "slots": [
+              {
+                "id": "68d2152afdf725db2fd41a24",
+                "required": true,
+                "dialog": {
+                  "confirm": [],
+                  "prompt": [],
+                  "utterances": [
+                    {
+                      "text": "{{[ano_inicio].68d2152afdf725db2fd41a24}}",
+                      "slots": [
+                        "68d2152afdf725db2fd41a24"
+                      ]
+                    }
+                  ],
+                  "confirmEnabled": false
+                }
+              }
+            ],
+            "inputs": []
+          },
+          {
+            "key": "capture_ano_fin_nggignhg",
+            "name": "capture_ano_fin_nggignhg",
+            "slots": [
+              {
+                "id": "68d21544fdf725db2fd41a27",
+                "required": true,
+                "dialog": {
+                  "confirm": [],
+                  "prompt": [],
+                  "utterances": [
+                    {
+                      "text": "{{[ano_fin].68d21544fdf725db2fd41a27}}",
+                      "slots": [
+                        "68d21544fdf725db2fd41a27"
+                      ]
+                    }
+                  ],
+                  "confirmEnabled": false
+                }
+              }
+            ],
+            "inputs": []
+          },
+          {
+            "key": "capture_solo_jdhoieec",
+            "name": "capture_solo_jdhoieec",
+            "slots": [
+              {
+                "id": "68d4065e91c5ab19193c60f9",
+                "required": true,
+                "dialog": {
+                  "confirm": [],
+                  "prompt": [],
+                  "utterances": [
+                    {
+                      "text": "{{[solo].68d4065e91c5ab19193c60f9}}",
+                      "slots": [
+                        "68d4065e91c5ab19193c60f9"
+                      ]
+                    }
+                  ],
+                  "confirmEnabled": false
+                }
+              }
+            ],
+            "inputs": []
+          },
+          {
+            "key": "capture_tipo_grafico_naplfani",
+            "name": "capture_tipo_grafico_naplfani",
+            "slots": [
+              {
+                "id": "68d425c191c5ab19193c7249",
+                "required": true,
+                "dialog": {
+                  "confirm": [],
+                  "prompt": [],
+                  "utterances": [
+                    {
+                      "text": "{{[tipo_grafico].68d425c191c5ab19193c7249}}",
+                      "slots": [
+                        "68d425c191c5ab19193c7249"
+                      ]
+                    }
+                  ],
+                  "confirmEnabled": false
+                }
+              }
+            ],
+            "inputs": []
+          }
+        ],
+        "usedEventsSet": [],
+        "usedIntentsSet": [
+          "68c0bdc3776dfb451768f7bb",
+          "capture_departamento_pgpnaee",
+          "capture_ano_inicio_hacnplao",
+          "capture_ano_fin_nggignhg",
+          "capture_solo_jdhoieec",
+          "capture_tipo_grafico_naplfani"
+        ],
+        "goToIntentsSet": [],
+        "entitiesMap": {},
+        "variableMap": {},
+        "intentsMap": {},
+        "requiredEntitiesMap": {},
+        "eventsMap": {},
+        "cmsVariables": {
+          "reply": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "sessions": {
+            "isSystem": true,
+            "description": "The number of times a particular user has opened the app.",
+            "defaultValue": null
+          },
+          "user_id": {
+            "isSystem": true,
+            "description": "The user's unique ID.",
+            "defaultValue": null
+          },
+          "timestamp": {
+            "isSystem": true,
+            "description": "UNIX timestamp (number of seconds since January 1st, 1970 at UTC).",
+            "defaultValue": null
+          },
+          "platform": {
+            "isSystem": true,
+            "description": "The platform your agent is running on (e.g. \"voiceflow\").",
+            "defaultValue": null
+          },
+          "locale": {
+            "isSystem": true,
+            "description": "The locale of the user (eg. en-US, en-CA, it-IT, fr-FR, ...).",
+            "defaultValue": null
+          },
+          "intent_confidence": {
+            "isSystem": true,
+            "description": "The confidence interval (measured as a value from 0 to 100) for the most recently matched intent.",
+            "defaultValue": null
+          },
+          "last_response": {
+            "isSystem": true,
+            "description": "The agent's last response (text/speak) in a string.",
+            "defaultValue": null
+          },
+          "last_event": {
+            "isSystem": true,
+            "description": "The object containing the last event that the user client has triggered.",
+            "defaultValue": null
+          },
+          "last_utterance": {
+            "isSystem": true,
+            "description": "The user's last utterance in a text string.",
+            "defaultValue": null
+          },
+          "vf_memory": {
+            "isSystem": true,
+            "description": "Last 10 user inputs and agent responses in a string (e.g. \"agent: How can i help?\"\nuser: What's the weather today?).",
+            "defaultValue": null
+          },
+          "stock_symbol": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "api_response": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "stock_price": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "departamentos": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          }
+        },
+        "cmsEntities": {
+          "ano_inicio": {
+            "variants": [],
+            "classifier": "VF.NUMBER",
+            "description": null
+          },
+          "ano_fin": {
+            "variants": [],
+            "classifier": "VF.NUMBER",
+            "description": null
+          },
+          "solo_un_ano": {
+            "variants": [],
+            "classifier": "VF.NUMBER",
+            "description": null
+          },
+          "grafico_url": {
+            "variants": [],
+            "classifier": "Custom",
+            "description": null
+          },
+          "grafico_mensaje": {
+            "variants": [],
+            "classifier": "Custom",
+            "description": null
+          },
+          "departamento1": {
+            "variants": [],
+            "classifier": "Custom",
+            "description": null
+          },
+          "departamentos_formateados": {
+            "variants": [],
+            "classifier": "VF.GEOGRAPHY",
+            "description": null
+          },
+          "solo": {
+            "variants": [],
+            "classifier": "VF.NAME",
+            "description": null
+          },
+          "departamento": {
+            "variants": [],
+            "classifier": "Custom",
+            "description": null
+          },
+          "tipo_grafico": {
+            "variants": [],
+            "classifier": "VF.NAME",
+            "description": null
+          }
+        }
+      },
+      "settings": {},
+      "platform": "webchat"
+    },
+    "settings": {
+      "voice": {
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_turbo_v2_5",
+          "voice": "ZF6FPAbjXT4488VcRRnw",
+          "settings": {
+            "speed": 1.2
+          }
+        },
+        "failureMessage": "We’re sorry, but the call cannot be completed at this time. Please try again later.",
+        "hasCallRecording": true
+      },
+      "widget": {
+        "type": "chat",
+        "chat": {
+          "voiceInput": true,
+          "voiceOutput": true,
+          "renderMode": "widget",
+          "headerImage": {
+            "enabled": true
+          },
+          "agentImage": {
+            "enabled": false
+          },
+          "banner": {
+            "title": "Your AI agent",
+            "description": "How can I help you today?",
+            "enabled": true
+          },
+          "placeholderText": "Message...",
+          "disclaimer": {
+            "enabled": false,
+            "title": "Privacy notice",
+            "description": "Before we can proceed with your conversation, we kindly ask you to review and accept our privacy policy, outlining how we handle and protect your personal information throughout our services.",
+            "primaryButtonText": "Submit",
+            "secondaryButtonText": "Privacy policy",
+            "secondaryButtonURL": ""
+          },
+          "aiDisclaimer": {
+            "text": "Generated by AI, double-check for accuracy.",
+            "enabled": false
+          },
+          "handoffToAgentImageURL": ""
+        },
+        "voice": {
+          "renderMode": "full",
+          "content": {
+            "talkingText": "Talk to interrupt",
+            "endButtonText": "End",
+            "listeningText": "Listening...",
+            "startButtonText": "Start a call",
+            "callToActionText": "How can I help you?"
+          }
+        },
+        "common": {
+          "sideSpacing": "20",
+          "bottomSpacing": "20",
+          "position": "right",
+          "fontFamily": "UCity Pro",
+          "primaryColor": {
+            "color": "#397DFF",
+            "palette": {
+              "50": "#E7F5FD",
+              "100": "#C6E4FB",
+              "200": "#A2D2FA",
+              "300": "#87BFFB",
+              "400": "#659FFD",
+              "500": "#397DFF",
+              "600": "#2F68DB",
+              "700": "#264EB4",
+              "800": "#1C368E",
+              "900": "#0F1E61"
+            }
+          },
+          "poweredBy": true,
+          "launcher": {
+            "type": "both",
+            "text": "Test your agent"
+          },
+          "footerLink": {
+            "enabled": false
+          },
+          "persistence": "localStorage"
+        },
+        "security": {
+          "approvedDomains": {
+            "enabled": false,
+            "domains": ""
+          },
+          "disableTranscript": false
+        }
+      },
+      "memory": {
+        "turns": 50
+      },
+      "llmFallback": {
+        "models": {
+          "open-ai": {
+            "*": {
+              "provider": "anthropic",
+              "model": "claude-4-sonnet"
+            }
+          },
+          "anthropic": {
+            "*": {
+              "provider": "open-ai",
+              "model": "gpt-4.1-2025-04-14"
+            }
+          },
+          "groq": {
+            "*": {
+              "provider": "anthropic",
+              "model": "claude-4-sonnet"
+            }
+          },
+          "google": {
+            "*": {
+              "provider": "anthropic",
+              "model": "claude-4-sonnet"
+            }
+          }
+        }
+      },
+      "globalNoMatch": {
+        "type": "static",
+        "prompt": [
+          {
+            "text": [
+              "Sorry, I didn’t get that. Please try again."
+            ]
+          }
+        ]
+      },
+      "intentClassification": {
+        "type": "rag",
+        "params": {
+          "model": "claude-3.5-haiku",
+          "temperature": 0.1
+        },
+        "promptWrapper": null
+      }
+    },
+    "topics": [
+      {
+        "type": "DIAGRAM",
+        "sourceID": "64dbb6696a8fab0013dba194"
+      }
+    ],
+    "variables": [
+      "reply",
+      "sessions",
+      "user_id",
+      "timestamp",
+      "platform",
+      "locale",
+      "intent_confidence",
+      "last_response",
+      "last_event",
+      "last_utterance",
+      "vf_memory",
+      "stock_symbol",
+      "api_response",
+      "stock_price",
+      "departamentos"
+    ],
+    "_id": "68d491c20944f0a2bdc2cb46",
+    "updatedAt": "2025-09-25T12:35:34.643Z",
+    "publishedAt": "2024-09-27T16:54:27.996Z",
+    "domains": [
+      {
+        "id": "cla06iyr900b206pkh8d4ap8n",
+        "name": "Home",
+        "live": true,
+        "topicIDs": [
+          "64dbb6696a8fab0013dba194"
+        ],
+        "rootDiagramID": "64dbb6696a8fab0013dba194",
+        "updatedBy": 1772631,
+        "updatedAt": "2025-09-25T00:50:10.482Z"
+      }
+    ],
+    "projectID": "68d491c20944f0a2bdc2cb45",
+    "rootDiagramID": "68c0b73a68a36a00076fc3e0",
+    "templateDiagramID": "64dbb6696a8fab0013dba195"
+  },
+  "diagrams": {
+    "68c0b73a68a36a00076fc3e0": {
+      "name": "CiberBank",
+      "type": "TOPIC",
+      "zoom": 54.999999999999964,
+      "nodes": {
+        "68c0b72d68a36a00076fc3a8": {
+          "type": "start",
+          "data": {
+            "name": "Start",
+            "color": "#56b365",
+            "triggers": [
+              {
+                "id": "cmfd7h02a00nj3j825are5gas",
+                "type": "intent",
+                "resourceID": "68c0bdc3776dfb451768f7bb",
+                "settings": {
+                  "local": false
+                }
+              }
+            ],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "id": "68c0b72d68a36a00076fc3a9",
+                  "type": "next",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -64.58,
+                          -311.33
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          -88.58,
+                          -311.33
+                        ]
+                      },
+                      {
+                        "point": [
+                          -88.58,
+                          -264.67
+                        ]
+                      },
+                      {
+                        "point": [
+                          48.36,
+                          -264.67
+                        ]
+                      },
+                      {
+                        "point": [
+                          48.36,
+                          -218
+                        ]
+                      },
+                      {
+                        "point": [
+                          24.36,
+                          -218
+                        ],
+                        "reversed": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  },
+                  "target": "68d20dadffdb8ab20291698d"
+                }
+              },
+              "dynamic": []
+            },
+            "steps": []
+          },
+          "nodeID": "68c0b72d68a36a00076fc3a8",
+          "coords": [
+            -0.24728784122001635,
+            -333.3350010423183
+          ]
+        },
+        "68d2062fffdb8ab20291696f": {
+          "type": "api-v2",
+          "data": {
+            "name": "",
+            "url": [
+              {
+                "text": [
+                  "https://5895b069-ba34-43cb-8644-ac7832399e30-00-1sw2bmiv7v9e6.spock.replit.dev/grafico/comparativo_dept?depts=",
+                  {
+                    "entityID": "68d20c50fdf725db2fd41853"
+                  },
+                  "&start=",
+                  {
+                    "entityID": "68d2152afdf725db2fd41a24"
+                  },
+                  "&end=",
+                  {
+                    "entityID": "68d21544fdf725db2fd41a27"
+                  },
+                  "\r\n"
+                ]
+              }
+            ],
+            "headers": [],
+            "httpMethod": "get",
+            "queryParameters": [],
+            "responseMappings": [],
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "68d2062fffdb8ab202916970",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1438.04,
+                          -104.58
+                        ]
+                      },
+                      {
+                        "point": [
+                          1476.92,
+                          -104.58
+                        ]
+                      },
+                      {
+                        "point": [
+                          1476.92,
+                          -171.5
+                        ]
+                      },
+                      {
+                        "point": [
+                          1515.81,
+                          -171.5
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": null,
+                  "id": "68d2062fffdb8ab202916971"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68d2062fffdb8ab20291696f"
+        },
+        "68d2062fffdb8ab202916972": {
+          "type": "block",
+          "data": {
+            "name": "API BARRAS",
+            "steps": [
+              "68d2062fffdb8ab20291696f"
+            ],
+            "color": "",
+            "triggers": []
+          },
+          "nodeID": "68d2062fffdb8ab202916972",
+          "coords": [
+            780.0373229400218,
+            -450.57608774884005
+          ]
+        },
+        "68d20912ffdb8ab202916978": {
+          "type": "capture-v3",
+          "data": {
+            "name": "Capture",
+            "capture": {
+              "type": "entity",
+              "items": [
+                {
+                  "id": "cmfw665e2007e3j7zuxvl6s8n",
+                  "entityID": "68d20c50fdf725db2fd41853",
+                  "repromptID": null
+                }
+              ],
+              "automaticReprompt": {
+                "params": null
+              },
+              "rules": []
+            },
+            "listenForOtherTriggers": true,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "68d20912ffdb8ab202916979",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -323.95,
+                          274.54
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          -347.95,
+                          274.54
+                        ]
+                      },
+                      {
+                        "point": [
+                          -347.95,
+                          347.03
+                        ]
+                      },
+                      {
+                        "point": [
+                          -186.71,
+                          347.03
+                        ]
+                      },
+                      {
+                        "point": [
+                          -186.71,
+                          419.51
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68d20912ffdb8ab202916978",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "68d20912ffdb8ab20291697a": {
+          "type": "block",
+          "data": {
+            "name": "VARIABLE 1",
+            "steps": [
+              "68d20912ffdb8ab202916978"
+            ],
+            "color": "",
+            "triggers": []
+          },
+          "nodeID": "68d20912ffdb8ab20291697a",
+          "coords": [
+            -601.8921363674592,
+            140.23651865788304
+          ]
+        },
+        "68d20cb4ffdb8ab202916981": {
+          "type": "code",
+          "data": {
+            "name": "",
+            "code": "// Lista fija de departamentos\r\nconst listaDepartamentos = [\r\n  \"AMAZONAS\",\"ANCASH\",\"APURIMAC\",\"AREQUIPA\",\"AYACUCHO\",\"CAJAMARCA\",\"CALLAO\",\r\n  \"CUSCO\",\"HUANCAVELICA\",\"HUANUCO\",\"ICA\",\"JUNIN\",\"LA LIBERTAD\",\"LAMBAYEQUE\",\r\n  \"LIMA\",\"LORETO\",\"MADRE DE DIOS\",\"MOQUEGUA\",\"PASCO\",\"PIURA\",\"PUNO\",\r\n  \"SAN MARTIN\",\"TACNA\",\"TUMBES\",\"UCAYALI\"\r\n];\r\n\r\nlet texto = \"\";\r\n\r\n// Capturamos lo que dijo el usuario en {solo}\r\nif (typeof solo === \"string\" && solo.trim().length > 0) {\r\n  texto = solo.toUpperCase();\r\n} else if (Array.isArray(solo)) {\r\n  texto = solo.join(\" \").toUpperCase();\r\n} else if (last_utterance) {\r\n  texto = String(last_utterance).toUpperCase();\r\n}\r\n\r\n// Reemplazamos conectores tipo \"y\"/\"and\" por espacios\r\ntexto = texto.replace(/\\s+y\\s+/ig, \" \").replace(/\\s+and\\s+/ig, \" \");\r\n\r\n// Buscamos qué departamentos aparecen dentro del texto\r\nlet encontrados = listaDepartamentos.filter(dep => texto.includes(dep));\r\n\r\n// Si no se encontró nada => TODOS\r\nif (encontrados.length === 0) {\r\n  encontrados = [\"TODOS\"];\r\n}\r\n\r\n// Guardamos en variable global\r\ndepartamentos_formateados = encontrados.join(\",\");\r\n",
+            "paths": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "68d20e32ffdb8ab202916999",
+                  "id": "68d20cb4ffdb8ab202916982",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          17.5,
+                          484.84
+                        ]
+                      },
+                      {
+                        "point": [
+                          88.85,
+                          484.84
+                        ]
+                      },
+                      {
+                        "point": [
+                          88.85,
+                          -221.35
+                        ]
+                      },
+                      {
+                        "point": [
+                          160.19,
+                          -221.35
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": null,
+                  "id": "68d20cb4ffdb8ab202916983"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "68d20cb4ffdb8ab202916981"
+        },
+        "68d20cb4ffdb8ab202916984": {
+          "type": "block",
+          "data": {
+            "name": "CODE BLOCK 1",
+            "steps": [
+              "68d20cb4ffdb8ab202916981"
+            ],
+            "color": "",
+            "triggers": []
+          },
+          "nodeID": "68d20cb4ffdb8ab202916984",
+          "coords": [
+            -148.49848607264593,
+            351.0860913936691
+          ]
+        },
+        "68d20dadffdb8ab20291698b": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "68d20daefdf725db2fd418c5",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "68d4117028b37a1d1ee6a67c",
+                  "id": "68d20dadffdb8ab20291698c",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -303.11,
+                          -85.53
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          -327.11,
+                          -85.53
+                        ]
+                      },
+                      {
+                        "point": [
+                          -327.11,
+                          61.47
+                        ]
+                      },
+                      {
+                        "point": [
+                          -142.42,
+                          61.47
+                        ]
+                      },
+                      {
+                        "point": [
+                          -142.42,
+                          105.51
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68d20dadffdb8ab20291698b"
+        },
+        "68d20dadffdb8ab20291698d": {
+          "type": "block",
+          "data": {
+            "name": "BIENVENIDA",
+            "steps": [
+              "68d20dadffdb8ab20291698b"
+            ],
+            "color": ""
+          },
+          "nodeID": "68d20dadffdb8ab20291698d",
+          "coords": [
+            -137.1065493825363,
+            -248.53436926416785
+          ]
+        },
+        "68d20e32ffdb8ab202916997": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "68d20e33fdf725db2fd418f5",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "68d214faffdb8ab2029169a2",
+                  "id": "68d20e32ffdb8ab202916998",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          491.19,
+                          -161.35
+                        ]
+                      },
+                      {
+                        "point": [
+                          515.19,
+                          -161.35
+                        ]
+                      },
+                      {
+                        "point": [
+                          515.19,
+                          -94.64
+                        ]
+                      },
+                      {
+                        "point": [
+                          325.26,
+                          -94.64
+                        ]
+                      },
+                      {
+                        "point": [
+                          325.26,
+                          -70.64
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68d20e32ffdb8ab202916997"
+        },
+        "68d20e32ffdb8ab202916999": {
+          "type": "block",
+          "data": {
+            "name": "MENSAJE 1",
+            "steps": [
+              "68d20e32ffdb8ab202916997"
+            ],
+            "color": ""
+          },
+          "nodeID": "68d20e32ffdb8ab202916999",
+          "coords": [
+            325.1931479243445,
+            -248.35388824647725
+          ]
+        },
+        "68d214faffdb8ab2029169a0": {
+          "type": "capture-v3",
+          "data": {
+            "name": "Capture",
+            "capture": {
+              "type": "entity",
+              "items": [
+                {
+                  "id": "cmfw03udw00t93j7zebl51krp",
+                  "entityID": "68d2152afdf725db2fd41a24"
+                }
+              ],
+              "automaticReprompt": {
+                "params": null
+              }
+            },
+            "listenForOtherTriggers": true,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "68d21639ffdb8ab2029169ae",
+                  "id": "68d214faffdb8ab2029169a1",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          491.26,
+                          44.61
+                        ]
+                      },
+                      {
+                        "point": [
+                          515.26,
+                          44.61
+                        ]
+                      },
+                      {
+                        "point": [
+                          515.26,
+                          111.45
+                        ]
+                      },
+                      {
+                        "point": [
+                          330.74,
+                          111.45
+                        ]
+                      },
+                      {
+                        "point": [
+                          330.74,
+                          178.3
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68d214faffdb8ab2029169a0",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "68d214faffdb8ab2029169a2": {
+          "type": "block",
+          "data": {
+            "name": "VARIABLE 2",
+            "steps": [
+              "68d214faffdb8ab2029169a0"
+            ],
+            "color": ""
+          },
+          "nodeID": "68d214faffdb8ab2029169a2",
+          "coords": [
+            325.25657287148954,
+            -34.64352883844342
+          ]
+        },
+        "68d21639ffdb8ab2029169ac": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "68d21706ffdb8ab2029169e3",
+                  "id": "68d21639ffdb8ab2029169ad",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          496.74,
+                          310.8
+                        ]
+                      },
+                      {
+                        "point": [
+                          520.74,
+                          310.8
+                        ]
+                      },
+                      {
+                        "point": [
+                          520.74,
+                          375.78
+                        ]
+                      },
+                      {
+                        "point": [
+                          341.43,
+                          375.78
+                        ]
+                      },
+                      {
+                        "point": [
+                          341.43,
+                          399.78
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "messageID": "68d2163bfdf725db2fd41a64"
+          },
+          "nodeID": "68d21639ffdb8ab2029169ac"
+        },
+        "68d21639ffdb8ab2029169ae": {
+          "type": "block",
+          "data": {
+            "name": "MENSAJE 2",
+            "steps": [
+              "68d21639ffdb8ab2029169ac"
+            ],
+            "color": ""
+          },
+          "nodeID": "68d21639ffdb8ab2029169ae",
+          "coords": [
+            330.7428307996083,
+            214.2993887091254
+          ]
+        },
+        "68d21706ffdb8ab2029169e1": {
+          "type": "capture-v3",
+          "data": {
+            "name": "Capture",
+            "capture": {
+              "type": "entity",
+              "items": [
+                {
+                  "id": "cmfw0e4tm01193j7z18bmhbq1",
+                  "entityID": "68d21544fdf725db2fd41a27"
+                }
+              ],
+              "automaticReprompt": {
+                "params": null
+              }
+            },
+            "listenForOtherTriggers": true,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "68d419e428b37a1d1ee6a723",
+                  "id": "68d21706ffdb8ab2029169e2",
+                  "data": {}
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68d21706ffdb8ab2029169e1"
+        },
+        "68d21706ffdb8ab2029169e3": {
+          "type": "block",
+          "data": {
+            "name": "VARIABLE 3",
+            "steps": [
+              "68d21706ffdb8ab2029169e1"
+            ],
+            "color": "",
+            "triggers": []
+          },
+          "nodeID": "68d21706ffdb8ab2029169e3",
+          "coords": [
+            341.42993439368814,
+            435.77930414252967
+          ]
+        },
+        "68d2175affdb8ab202916a1c": {
+          "type": "code",
+          "data": {
+            "name": "",
+            "code": "const baseUrl = \"https://5895b069-ba34-43cb-8644-ac7832399e30-00-1sw2bmiv7v9e6.spock.replit.dev/grafico/comparativo_dept\";\r\n\r\n// ------------------ DEPARTAMENTOS ------------------\r\nlet deptsParam;\r\nif (typeof departamentos_formateados === \"string\" && departamentos_formateados.trim().length > 0) {\r\n  deptsParam = departamentos_formateados\r\n    .split(\",\")\r\n    .map(d => encodeURIComponent(d.trim().toUpperCase()))\r\n    .join(\",\");\r\n} else {\r\n  deptsParam = \"TODOS\";\r\n}\r\n\r\n// ------------------ AÑOS ------------------\r\nlet start = (ano_inicio !== undefined && ano_inicio !== null && ano_inicio !== \"\") ? parseInt(ano_inicio, 10) : NaN;\r\nlet end   = (ano_fin    !== undefined && ano_fin    !== null && ano_fin    !== \"\") ? parseInt(ano_fin, 10) : NaN;\r\n\r\nconst currentYear = (new Date()).getFullYear();\r\n\r\nif (isNaN(start) && !isNaN(end)) start = end;\r\nif (isNaN(end)   && !isNaN(start)) end = start;\r\nif (isNaN(start) && isNaN(end)) { start = currentYear; end = currentYear; }\r\n\r\nif (!isNaN(start) && !isNaN(end) && start > end) {\r\n  [start, end] = [end, start]; // swap si están invertidos\r\n}\r\n\r\n// ------------------ URLS POR TIPO DE GRÁFICO ------------------\r\nconst urls = {\r\n  barras: `${baseUrl}?depts=${deptsParam}&start=${start}&end=${end}&chart=bar`,\r\n  pastel: `${baseUrl}?depts=${deptsParam}&start=${start}&end=${end}&chart=pie`,\r\n  lineal: `${baseUrl}?depts=${deptsParam}&start=${start}&end=${end}&chart=line`\r\n};\r\n\r\n// ------------------ DETECCIÓN DE LA ELECCIÓN (desde la variable tipo_grafico) ------------------\r\n// tipo_grafico viene del Capture block (texto libre). Hacemos matching por keywords.\r\nconst choiceText = String(tipo_grafico || \"\").toLowerCase();\r\n\r\nlet key = \"barras\"; // default\r\nif (choiceText.includes(\"pastel\") || choiceText.includes(\"pie\")) key = \"pastel\";\r\nelse if (choiceText.includes(\"line\") || choiceText.includes(\"línea\") || choiceText.includes(\"lineal\") || choiceText.includes(\"linea\")) key = \"lineal\";\r\nelse if (choiceText.includes(\"bar\") || choiceText.includes(\"barr\")) key = \"barras\";\r\n\r\n// URL seleccionada\r\nconst urlElegida = urls[key];\r\n\r\n// Guardar url elegida (opcional, útil si tus API blocks la usan)\r\ngrafico_url = urlElegida;\r\n\r\n// ------------------ MENSAJE FINAL ------------------\r\nif (start === end) {\r\n  grafico_mensaje = `Listo — aquí tienes el gráfico de tipo ${key} para ${deptsParam} del año ${start}. Puedes verlo aquí: ${urlElegida}`;\r\n} else {\r\n  grafico_mensaje = `Listo — aquí tienes el gráfico ${key} comparativo para ${deptsParam} entre ${start} - ${end}. Puedes verlo aquí: ${urlElegida}`;\r\n}\r\n",
+            "paths": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "68d2204bffdb8ab202916a34",
+                  "id": "68d2175affdb8ab202916a1d",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          961.56,
+                          344.88
+                        ]
+                      },
+                      {
+                        "point": [
+                          1064.58,
+                          344.88
+                        ]
+                      },
+                      {
+                        "point": [
+                          1064.58,
+                          52.62
+                        ]
+                      },
+                      {
+                        "point": [
+                          1167.61,
+                          52.62
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": null,
+                  "id": "68d2175affdb8ab202916a1e"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "68d2175affdb8ab202916a1c"
+        },
+        "68d2175affdb8ab202916a1f": {
+          "type": "block",
+          "data": {
+            "name": "CODE BLOCK 2",
+            "steps": [
+              "68d2175affdb8ab202916a1c"
+            ],
+            "color": "",
+            "triggers": []
+          },
+          "nodeID": "68d2175affdb8ab202916a1f",
+          "coords": [
+            795.5551231584126,
+            211.1249303645325
+          ]
+        },
+        "68d2204bffdb8ab202916a32": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "68d2204bffdb8ab202916a33"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "messageID": "68d22163fdf725db2fd420e7"
+          },
+          "nodeID": "68d2204bffdb8ab202916a32"
+        },
+        "68d2204bffdb8ab202916a34": {
+          "type": "block",
+          "data": {
+            "name": "MENSAJE 3",
+            "steps": [
+              "68d2204bffdb8ab202916a32"
+            ],
+            "color": ""
+          },
+          "nodeID": "68d2204bffdb8ab202916a34",
+          "coords": [
+            1332.6066039967661,
+            25.62462274794604
+          ]
+        },
+        "68d4117028b37a1d1ee6a67a": {
+          "type": "capture-v3",
+          "data": {
+            "name": "Capture",
+            "capture": {
+              "type": "entity",
+              "items": [
+                {
+                  "id": "cmfy5ksz702h73585nsddrpgu",
+                  "entityID": "68d4065e91c5ab19193c60f9"
+                }
+              ],
+              "automaticReprompt": {
+                "params": null
+              }
+            },
+            "listenForOtherTriggers": true,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "68d20cb4ffdb8ab202916984",
+                  "id": "68d4117028b37a1d1ee6a67b",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -308.42,
+                          220.76
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          -332.42,
+                          220.76
+                        ]
+                      },
+                      {
+                        "point": [
+                          -332.42,
+                          284.01
+                        ]
+                      },
+                      {
+                        "point": [
+                          -148.5,
+                          284.01
+                        ]
+                      },
+                      {
+                        "point": [
+                          -148.5,
+                          315.09
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68d4117028b37a1d1ee6a67a",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "68d4117028b37a1d1ee6a67c": {
+          "type": "block",
+          "data": {
+            "name": "VARIABLE 0",
+            "steps": [
+              "68d4117028b37a1d1ee6a67a"
+            ],
+            "color": "",
+            "triggers": []
+          },
+          "nodeID": "68d4117028b37a1d1ee6a67c",
+          "coords": [
+            -142.42440641195455,
+            141.50989212429542
+          ]
+        },
+        "68d4169328b37a1d1ee6a70f": {
+          "type": "api-v2",
+          "data": {
+            "name": "",
+            "url": [
+              {
+                "text": [
+                  "https://5895b069-ba34-43cb-8644-ac7832399e30-00-1sw2bmiv7v9e6.spock.replit.dev/grafico/comparativo_dept?depts=",
+                  {
+                    "entityID": "68d20c50fdf725db2fd41853"
+                  },
+                  "&start=",
+                  {
+                    "entityID": "68d2152afdf725db2fd41a24"
+                  },
+                  "&end=",
+                  {
+                    "entityID": "68d21544fdf725db2fd41a27"
+                  },
+                  "&chart=pie"
+                ]
+              }
+            ],
+            "headers": [],
+            "httpMethod": "get",
+            "queryParameters": [],
+            "responseMappings": [],
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "68d4169328b37a1d1ee6a710",
+                  "data": {}
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": null,
+                  "id": "68d4169328b37a1d1ee6a711"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68d4169328b37a1d1ee6a70f"
+        },
+        "68d4169328b37a1d1ee6a712": {
+          "type": "block",
+          "data": {
+            "name": "API PASTEL",
+            "steps": [
+              "68d4169328b37a1d1ee6a70f"
+            ],
+            "color": ""
+          },
+          "nodeID": "68d4169328b37a1d1ee6a712",
+          "coords": [
+            1113.9330383604579,
+            -468.7055143246336
+          ]
+        },
+        "68d416f028b37a1d1ee6a718": {
+          "type": "api-v2",
+          "data": {
+            "name": "",
+            "url": [
+              {
+                "text": [
+                  "/grafico/comparativo_dept?depts=",
+                  {
+                    "entityID": "68d20c50fdf725db2fd41853"
+                  },
+                  "&start=",
+                  {
+                    "entityID": "68d2152afdf725db2fd41a24"
+                  },
+                  "&end=",
+                  {
+                    "entityID": "68d21544fdf725db2fd41a27"
+                  },
+                  "&chart=line\r"
+                ]
+              }
+            ],
+            "headers": [],
+            "httpMethod": "get",
+            "queryParameters": [],
+            "responseMappings": [],
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "68d416f028b37a1d1ee6a719",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1598.99,
+                          487.66
+                        ]
+                      },
+                      {
+                        "point": [
+                          1693.9,
+                          487.66
+                        ]
+                      },
+                      {
+                        "point": [
+                          1693.9,
+                          434.41
+                        ]
+                      },
+                      {
+                        "point": [
+                          1788.81,
+                          434.41
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": null,
+                  "id": "68d416f028b37a1d1ee6a71a"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68d416f028b37a1d1ee6a718"
+        },
+        "68d416f028b37a1d1ee6a71b": {
+          "type": "block",
+          "data": {
+            "name": "API LINEAL",
+            "steps": [
+              "68d416f028b37a1d1ee6a718"
+            ],
+            "color": ""
+          },
+          "nodeID": "68d416f028b37a1d1ee6a71b",
+          "coords": [
+            1465.9870924145105,
+            -465.3406494597694
+          ]
+        },
+        "68d419e428b37a1d1ee6a721": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "68d419e491c5ab19193c6b91",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "68d425aa28b37a1d1ee6a784",
+                  "id": "68d419e428b37a1d1ee6a722",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          641.04,
+                          -149.67
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          617.04,
+                          -149.67
+                        ]
+                      },
+                      {
+                        "point": [
+                          617.04,
+                          -69.17
+                        ]
+                      },
+                      {
+                        "point": [
+                          801.35,
+                          -69.17
+                        ]
+                      },
+                      {
+                        "point": [
+                          801.35,
+                          -37.03
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68d419e428b37a1d1ee6a721"
+        },
+        "68d419e428b37a1d1ee6a723": {
+          "type": "block",
+          "data": {
+            "name": "MENSAJE 4",
+            "steps": [
+              "68d419e428b37a1d1ee6a721"
+            ],
+            "color": ""
+          },
+          "nodeID": "68d419e428b37a1d1ee6a723",
+          "coords": [
+            807.0374567544793,
+            -246.1663597854785
+          ]
+        },
+        "68d425aa28b37a1d1ee6a782": {
+          "type": "capture-v3",
+          "data": {
+            "name": "Capture",
+            "capture": {
+              "type": "entity",
+              "items": [
+                {
+                  "id": "cmfy8o7c604k93585tezauw4v",
+                  "entityID": "68d425c191c5ab19193c7249"
+                }
+              ],
+              "automaticReprompt": {
+                "params": null
+              }
+            },
+            "listenForOtherTriggers": true,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "68d2175affdb8ab202916a1f",
+                  "id": "68d425aa28b37a1d1ee6a783",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          635.35,
+                          78.22
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          611.35,
+                          78.22
+                        ]
+                      },
+                      {
+                        "point": [
+                          611.35,
+                          141.47
+                        ]
+                      },
+                      {
+                        "point": [
+                          795.55,
+                          141.47
+                        ]
+                      },
+                      {
+                        "point": [
+                          795.55,
+                          175.13
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68d425aa28b37a1d1ee6a782"
+        },
+        "68d425aa28b37a1d1ee6a784": {
+          "type": "block",
+          "data": {
+            "name": "VARIABLE 4",
+            "steps": [
+              "68d425aa28b37a1d1ee6a782"
+            ],
+            "color": ""
+          },
+          "nodeID": "68d425aa28b37a1d1ee6a784",
+          "coords": [
+            801.3493603850769,
+            -1.0321867282076975
+          ]
+        }
+      },
+      "offsetX": 799.053614614199,
+      "offsetY": 373.43600192550286,
+      "modified": 1757460269,
+      "creatorID": 1772631,
+      "variables": [],
+      "_id": "68d491c20944f0a2bdc2cb48",
+      "diagramID": "68c0b73a68a36a00076fc3e0",
+      "versionID": "68d491c20944f0a2bdc2cb46"
+    }
+  },
+  "flows": [],
+  "entities": [
+    {
+      "id": "68d2152afdf725db2fd41a24",
+      "name": "ano_inicio",
+      "createdByID": 1772631,
+      "folderID": null,
+      "description": null,
+      "color": "#6fa690",
+      "classifier": "VF.NUMBER",
+      "isArray": false,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68d21544fdf725db2fd41a27",
+      "name": "ano_fin",
+      "createdByID": 1772631,
+      "folderID": null,
+      "description": null,
+      "color": "#56B365",
+      "classifier": "VF.NUMBER",
+      "isArray": false,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68d21fd4fdf725db2fd41fbc",
+      "name": "solo_un_ano",
+      "createdByID": 1772631,
+      "folderID": null,
+      "description": null,
+      "color": "#56B365",
+      "classifier": "VF.NUMBER",
+      "isArray": false,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68d2202dfdf725db2fd42010",
+      "name": "grafico_url",
+      "createdByID": 1772631,
+      "folderID": null,
+      "description": null,
+      "color": "#71a59e",
+      "classifier": "Custom",
+      "isArray": false,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68d22142fdf725db2fd420d0",
+      "name": "grafico_mensaje",
+      "createdByID": 1772631,
+      "folderID": null,
+      "description": null,
+      "color": "#5B9FD7",
+      "classifier": "Custom",
+      "isArray": false,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68d3ff0391c5ab19193c5b8b",
+      "name": "departamento1",
+      "createdByID": 1772631,
+      "folderID": null,
+      "description": null,
+      "color": "#5B9FD7",
+      "classifier": "Custom",
+      "isArray": false,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68d4044791c5ab19193c605c",
+      "name": "departamentos_formateados",
+      "createdByID": 1772631,
+      "folderID": null,
+      "description": null,
+      "color": "#71a59e",
+      "classifier": "VF.GEOGRAPHY",
+      "isArray": false,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68d4065e91c5ab19193c60f9",
+      "name": "solo",
+      "createdByID": 1772631,
+      "folderID": null,
+      "description": null,
+      "color": "#DC8879",
+      "classifier": "VF.NAME",
+      "isArray": false,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68d20c50fdf725db2fd41853",
+      "name": "departamento",
+      "createdByID": 1772631,
+      "folderID": null,
+      "description": null,
+      "color": "#56B365",
+      "classifier": "Custom",
+      "isArray": false,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68d425c191c5ab19193c7249",
+      "name": "tipo_grafico",
+      "createdByID": 1772631,
+      "folderID": null,
+      "description": null,
+      "color": "#d182b6",
+      "classifier": "VF.NAME",
+      "isArray": false,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    }
+  ],
+  "entityVariants": [
+    {
+      "id": "68d40bed91c5ab19193c63cb",
+      "language": "en-us",
+      "value": "TODOS",
+      "synonyms": [
+        "todos",
+        "Todos",
+        "todo",
+        "Todo",
+        "TODO"
+      ],
+      "entityID": "68d20c50fdf725db2fd41853",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d2152afdf725db2fd41a25",
+      "language": "en-us",
+      "value": "2015",
+      "synonyms": [],
+      "entityID": "68d2152afdf725db2fd41a24",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d21656fdf725db2fd41a6d",
+      "language": "en-us",
+      "value": "2016",
+      "synonyms": [],
+      "entityID": "68d2152afdf725db2fd41a24",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d2165cfdf725db2fd41a6f",
+      "language": "en-us",
+      "value": "2018",
+      "synonyms": [],
+      "entityID": "68d2152afdf725db2fd41a24",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d21659fdf725db2fd41a6e",
+      "language": "en-us",
+      "value": "2017",
+      "synonyms": [],
+      "entityID": "68d2152afdf725db2fd41a24",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d2165ffdf725db2fd41a70",
+      "language": "en-us",
+      "value": "2019",
+      "synonyms": [],
+      "entityID": "68d2152afdf725db2fd41a24",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d21662fdf725db2fd41a71",
+      "language": "en-us",
+      "value": "2020",
+      "synonyms": [],
+      "entityID": "68d2152afdf725db2fd41a24",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d21664fdf725db2fd41a72",
+      "language": "en-us",
+      "value": "2021",
+      "synonyms": [],
+      "entityID": "68d2152afdf725db2fd41a24",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d21666fdf725db2fd41a73",
+      "language": "en-us",
+      "value": "2022",
+      "synonyms": [],
+      "entityID": "68d2152afdf725db2fd41a24",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d216d1fdf725db2fd41a95",
+      "language": "en-us",
+      "value": "2023",
+      "synonyms": [],
+      "entityID": "68d2152afdf725db2fd41a24",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d216d4fdf725db2fd41a9e",
+      "language": "en-us",
+      "value": "2024",
+      "synonyms": [],
+      "entityID": "68d2152afdf725db2fd41a24",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d20c50fdf725db2fd41854",
+      "language": "en-us",
+      "value": "UCAYALI",
+      "synonyms": [
+        "ucayali",
+        "Ucayali"
+      ],
+      "entityID": "68d20c50fdf725db2fd41853",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d20c50fdf725db2fd41855",
+      "language": "en-us",
+      "value": "TUMBES",
+      "synonyms": [
+        "tumbes",
+        "Tumbes"
+      ],
+      "entityID": "68d20c50fdf725db2fd41853",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d20c50fdf725db2fd41856",
+      "language": "en-us",
+      "value": "TACNA",
+      "synonyms": [
+        "tacna",
+        "Tacna"
+      ],
+      "entityID": "68d20c50fdf725db2fd41853",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d20c50fdf725db2fd4185f",
+      "language": "en-us",
+      "value": "LAMBAYEQUE",
+      "synonyms": [
+        "lambayeque",
+        "Lambayeque"
+      ],
+      "entityID": "68d20c50fdf725db2fd41853",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d20c50fdf725db2fd41860",
+      "language": "en-us",
+      "value": "LA LIBERTAD",
+      "synonyms": [
+        "la libertad",
+        "La Libertad",
+        "La libertad",
+        "la Libertad"
+      ],
+      "entityID": "68d20c50fdf725db2fd41853",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d20c50fdf725db2fd41861",
+      "language": "en-us",
+      "value": "JUNIN",
+      "synonyms": [
+        "junin",
+        "Junin",
+        "Junín",
+        "junín"
+      ],
+      "entityID": "68d20c50fdf725db2fd41853",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d20c50fdf725db2fd41862",
+      "language": "en-us",
+      "value": "ICA",
+      "synonyms": [
+        "ica",
+        "Ica"
+      ],
+      "entityID": "68d20c50fdf725db2fd41853",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d20c50fdf725db2fd41863",
+      "language": "en-us",
+      "value": "HUANUCO",
+      "synonyms": [
+        "huanuco",
+        "Huanuco"
+      ],
+      "entityID": "68d20c50fdf725db2fd41853",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d20c50fdf725db2fd41864",
+      "language": "en-us",
+      "value": "HUANCAVELICA",
+      "synonyms": [
+        "huancavelica",
+        "Huancavelica"
+      ],
+      "entityID": "68d20c50fdf725db2fd41853",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d20c50fdf725db2fd41865",
+      "language": "en-us",
+      "value": "CUSCO",
+      "synonyms": [
+        "cusco",
+        "Cusco"
+      ],
+      "entityID": "68d20c50fdf725db2fd41853",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d20c50fdf725db2fd41866",
+      "language": "en-us",
+      "value": "CALLAO",
+      "synonyms": [
+        "callao",
+        "Callao"
+      ],
+      "entityID": "68d20c50fdf725db2fd41853",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d20c50fdf725db2fd41867",
+      "language": "en-us",
+      "value": "CAJAMARCA",
+      "synonyms": [
+        "cajamarca",
+        "Cajamarca"
+      ],
+      "entityID": "68d20c50fdf725db2fd41853",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d20c50fdf725db2fd41868",
+      "language": "en-us",
+      "value": "AYACUCHO",
+      "synonyms": [
+        "ayacucho",
+        "Ayacucho"
+      ],
+      "entityID": "68d20c50fdf725db2fd41853",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d20c50fdf725db2fd41869",
+      "language": "en-us",
+      "value": "AREQUIPA",
+      "synonyms": [
+        "arequipa",
+        "Arequipa"
+      ],
+      "entityID": "68d20c50fdf725db2fd41853",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d20c50fdf725db2fd4186a",
+      "language": "en-us",
+      "value": "APURIMAC",
+      "synonyms": [
+        "apurimac",
+        "Apurimac"
+      ],
+      "entityID": "68d20c50fdf725db2fd41853",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d20c50fdf725db2fd4186b",
+      "language": "en-us",
+      "value": "ANCASH",
+      "synonyms": [
+        "ancash",
+        "Ancash"
+      ],
+      "entityID": "68d20c50fdf725db2fd41853",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d20c50fdf725db2fd4186c",
+      "language": "en-us",
+      "value": "AMAZONAS",
+      "synonyms": [
+        "amazonas",
+        "Amazonas"
+      ],
+      "entityID": "68d20c50fdf725db2fd41853",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d21716fdf725db2fd41abe",
+      "language": "en-us",
+      "value": "2015",
+      "synonyms": [],
+      "entityID": "68d21544fdf725db2fd41a27",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d21719fdf725db2fd41ac7",
+      "language": "en-us",
+      "value": "2016",
+      "synonyms": [],
+      "entityID": "68d21544fdf725db2fd41a27",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d2171cfdf725db2fd41ac8",
+      "language": "en-us",
+      "value": "2017",
+      "synonyms": [],
+      "entityID": "68d21544fdf725db2fd41a27",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d2171ffdf725db2fd41aca",
+      "language": "en-us",
+      "value": "2018",
+      "synonyms": [],
+      "entityID": "68d21544fdf725db2fd41a27",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d21722fdf725db2fd41acb",
+      "language": "en-us",
+      "value": "2019",
+      "synonyms": [],
+      "entityID": "68d21544fdf725db2fd41a27",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d21724fdf725db2fd41acc",
+      "language": "en-us",
+      "value": "2020",
+      "synonyms": [],
+      "entityID": "68d21544fdf725db2fd41a27",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d2172afdf725db2fd41ad6",
+      "language": "en-us",
+      "value": "2024",
+      "synonyms": [],
+      "entityID": "68d21544fdf725db2fd41a27",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d21725fdf725db2fd41acd",
+      "language": "en-us",
+      "value": "2021",
+      "synonyms": [],
+      "entityID": "68d21544fdf725db2fd41a27",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d21727fdf725db2fd41ace",
+      "language": "en-us",
+      "value": "2022",
+      "synonyms": [],
+      "entityID": "68d21544fdf725db2fd41a27",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d21728fdf725db2fd41acf",
+      "language": "en-us",
+      "value": "2023",
+      "synonyms": [],
+      "entityID": "68d21544fdf725db2fd41a27",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d20c50fdf725db2fd4185e",
+      "language": "en-us",
+      "value": "LIMA",
+      "synonyms": [
+        "lima",
+        "Lima"
+      ],
+      "entityID": "68d20c50fdf725db2fd41853",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d20c50fdf725db2fd4185d",
+      "language": "en-us",
+      "value": "LORETO",
+      "synonyms": [
+        "loreto",
+        "Loreto"
+      ],
+      "entityID": "68d20c50fdf725db2fd41853",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d20c50fdf725db2fd4185a",
+      "language": "en-us",
+      "value": "PASCO",
+      "synonyms": [
+        "pasco",
+        "Pasco"
+      ],
+      "entityID": "68d20c50fdf725db2fd41853",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d20c50fdf725db2fd41858",
+      "language": "en-us",
+      "value": "PUNO",
+      "synonyms": [
+        "puno",
+        "Puno"
+      ],
+      "entityID": "68d20c50fdf725db2fd41853",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d20c50fdf725db2fd4185c",
+      "language": "en-us",
+      "value": "MADRE DE DIOS",
+      "synonyms": [
+        "madre de dios",
+        "Madre De Dios",
+        "Madre de Dios",
+        "Madre de dios"
+      ],
+      "entityID": "68d20c50fdf725db2fd41853",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d20c50fdf725db2fd4185b",
+      "language": "en-us",
+      "value": "MOQUEGUA",
+      "synonyms": [
+        "moquegua",
+        "Moquegua"
+      ],
+      "entityID": "68d20c50fdf725db2fd41853",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d20c50fdf725db2fd41859",
+      "language": "en-us",
+      "value": "PIURA",
+      "synonyms": [
+        "piura",
+        "Piura"
+      ],
+      "entityID": "68d20c50fdf725db2fd41853",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d20c50fdf725db2fd41857",
+      "language": "en-us",
+      "value": "SAN MARTIN",
+      "synonyms": [
+        "san martin",
+        "san martín",
+        "San Martin",
+        "San Martín",
+        "San martin",
+        "San martín"
+      ],
+      "entityID": "68d20c50fdf725db2fd41853",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    }
+  ],
+  "intents": [
+    {
+      "id": "None",
+      "name": "None",
+      "createdByID": 1772631,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68c0bdc3776dfb451768f7bb",
+      "name": "obtener_precio",
+      "createdByID": 1772631,
+      "folderID": null,
+      "description": "Esta intención se activa cuando el usuario pregunta por el precio o la cotización de una acción de una empresa.",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68d41e0191c5ab19193c6d52",
+      "name": "barras",
+      "createdByID": 1772631,
+      "folderID": null,
+      "description": "El usuario quiere ver un gráfico de barras",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68d41e2c91c5ab19193c6d9e",
+      "name": "pastel",
+      "createdByID": 1772631,
+      "folderID": null,
+      "description": "El usuario quiere ver un Grafico Pastel",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68d41e6a91c5ab19193c6dc9",
+      "name": "lineal",
+      "createdByID": 1772631,
+      "folderID": null,
+      "description": "El usuario quiere ver Grafico Lineal",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    }
+  ],
+  "utterances": [
+    {
+      "id": "68c0bdc3776dfb451768f7bc",
+      "text": [
+        {
+          "text": [
+            "Dame el precio de una acción"
+          ]
+        }
+      ],
+      "intentID": "68c0bdc3776dfb451768f7bb",
+      "language": "en-us",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68c0bdc3776dfb451768f7bd",
+      "text": [
+        {
+          "text": [
+            "Quiero saber la cotización"
+          ]
+        }
+      ],
+      "intentID": "68c0bdc3776dfb451768f7bb",
+      "language": "en-us",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68c0bdc3776dfb451768f7be",
+      "text": [
+        {
+          "text": [
+            "Precio de una empresa"
+          ]
+        }
+      ],
+      "intentID": "68c0bdc3776dfb451768f7bb",
+      "language": "en-us",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d41e0191c5ab19193c6d53",
+      "text": [
+        {
+          "text": [
+            "barras, bar chart"
+          ]
+        }
+      ],
+      "intentID": "68d41e0191c5ab19193c6d52",
+      "language": "en-us",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d41e2c91c5ab19193c6d9f",
+      "text": [
+        {
+          "text": [
+            "pastel, pie chart"
+          ]
+        }
+      ],
+      "intentID": "68d41e2c91c5ab19193c6d9e",
+      "language": "en-us",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d41e6a91c5ab19193c6dca",
+      "text": [
+        {
+          "text": [
+            "lineal, line chart"
+          ]
+        }
+      ],
+      "intentID": "68d41e6a91c5ab19193c6dc9",
+      "language": "en-us",
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    }
+  ],
+  "requiredEntities": [],
+  "folders": [],
+  "responses": [
+    {
+      "id": "68d20daefdf725db2fd418c5",
+      "name": "",
+      "createdByID": 1772631,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68d20e33fdf725db2fd418f5",
+      "name": "",
+      "createdByID": 1772631,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68d2163bfdf725db2fd41a64",
+      "name": "",
+      "createdByID": 1772631,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68d22163fdf725db2fd420e7",
+      "name": "",
+      "createdByID": 1772631,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68c0be19776dfb451768f7e5",
+      "name": "",
+      "createdByID": 1772631,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68c0c163776dfb451768f8f4",
+      "name": "",
+      "createdByID": 1772631,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68c1780f6ce83b30c17897ab",
+      "name": "",
+      "createdByID": 1772631,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68c184c16ce83b30c1789d9e",
+      "name": "",
+      "createdByID": 1772631,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68d419e491c5ab19193c6b91",
+      "name": "",
+      "createdByID": 1772631,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68d4209e91c5ab19193c6ede",
+      "name": "",
+      "createdByID": 1772631,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68d420b091c5ab19193c6eef",
+      "name": "",
+      "createdByID": 1772631,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    }
+  ],
+  "responseMessages": [
+    {
+      "id": "68d20daefdf725db2fd418c7",
+      "discriminatorID": "68d20daefdf725db2fd418c6",
+      "text": [
+        {
+          "text": [
+            "👋 ¡Bienvenido al Asistente de Accidentes de Tránsito!\nAquí podrás consultar y generar gráficas comparativas de los accidentes registrados en distintos departamentos del país.\n\n¿De que departamentos deseas ver la información"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d20e33fdf725db2fd418f7",
+      "discriminatorID": "68d20e33fdf725db2fd418f6",
+      "text": [
+        {
+          "text": [
+            "¿Desde qué año quieres comenzar la consulta?"
+          ]
+        },
+        {
+          "text": [
+            "Tenemos información disponible del 2015 hasta el 2024."
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d2163bfdf725db2fd41a66",
+      "discriminatorID": "68d2163bfdf725db2fd41a65",
+      "text": [
+        {
+          "text": [
+            "¿Hasta qué año quieres comparar? Si solo quieres un año, dime el mismo."
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d22163fdf725db2fd420e9",
+      "discriminatorID": "68d22163fdf725db2fd420e8",
+      "text": [
+        {
+          "text": [
+            "",
+            {
+              "entityID": "68d22142fdf725db2fd420d0"
+            },
+            " "
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68c0be19776dfb451768f7e7",
+      "discriminatorID": "68c0be19776dfb451768f7e6",
+      "text": [
+        {
+          "text": [
+            "¡Claro! ¿De qué empresa quieres la cotización? Por favor, dame su símbolo de bolsa (por ejemplo: AAPL, MSFT, TSLA)."
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68c0c163776dfb451768f8f6",
+      "discriminatorID": "68c0c163776dfb451768f8f5",
+      "text": [
+        {
+          "text": [
+            "El precio de tu accion es de ",
+            {
+              "variableID": "68c0c151776dfb451768f8e9"
+            },
+            "  USD"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68c184c16ce83b30c1789da0",
+      "discriminatorID": "68c184c16ce83b30c1789d9f",
+      "text": [
+        {
+          "text": [
+            "{obtener_precio}"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68c1780f6ce83b30c17897ad",
+      "discriminatorID": "68c1780f6ce83b30c17897ac",
+      "text": [
+        {
+          "text": [
+            ""
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d419e491c5ab19193c6b93",
+      "discriminatorID": "68d419e491c5ab19193c6b92",
+      "text": [
+        {
+          "text": [
+            "¿En qué tipo de grafico deseas ver la información?(Barras, Pastel, Lineal)"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d4209e91c5ab19193c6ee0",
+      "discriminatorID": "68d4209e91c5ab19193c6edf",
+      "text": [
+        {
+          "text": [
+            "",
+            {
+              "entityID": "68d22142fdf725db2fd420d0"
+            },
+            " "
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d420b091c5ab19193c6ef1",
+      "discriminatorID": "68d420b091c5ab19193c6ef0",
+      "text": [
+        {
+          "text": [
+            "",
+            {
+              "entityID": "68d22142fdf725db2fd420d0"
+            },
+            " "
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    }
+  ],
+  "responseDiscriminators": [
+    {
+      "id": "68d20daefdf725db2fd418c6",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68d20daefdf725db2fd418c5",
+      "variantOrder": [
+        "68d20daefdf725db2fd418c7"
+      ],
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d20e33fdf725db2fd418f6",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68d20e33fdf725db2fd418f5",
+      "variantOrder": [
+        "68d20e33fdf725db2fd418f7"
+      ],
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d2163bfdf725db2fd41a65",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68d2163bfdf725db2fd41a64",
+      "variantOrder": [
+        "68d2163bfdf725db2fd41a66"
+      ],
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d22163fdf725db2fd420e8",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68d22163fdf725db2fd420e7",
+      "variantOrder": [
+        "68d22163fdf725db2fd420e9"
+      ],
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68c0be19776dfb451768f7e6",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68c0be19776dfb451768f7e5",
+      "variantOrder": [
+        "68c0be19776dfb451768f7e7"
+      ],
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68c0c163776dfb451768f8f5",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68c0c163776dfb451768f8f4",
+      "variantOrder": [
+        "68c0c163776dfb451768f8f6"
+      ],
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68c1780f6ce83b30c17897ac",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68c1780f6ce83b30c17897ab",
+      "variantOrder": [
+        "68c1780f6ce83b30c17897ad"
+      ],
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68c184c16ce83b30c1789d9f",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68c184c16ce83b30c1789d9e",
+      "variantOrder": [
+        "68c184c16ce83b30c1789da0"
+      ],
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d419e491c5ab19193c6b92",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68d419e491c5ab19193c6b91",
+      "variantOrder": [
+        "68d419e491c5ab19193c6b93"
+      ],
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d420b091c5ab19193c6ef0",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68d420b091c5ab19193c6eef",
+      "variantOrder": [
+        "68d420b091c5ab19193c6ef1"
+      ],
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68d4209e91c5ab19193c6edf",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68d4209e91c5ab19193c6ede",
+      "variantOrder": [
+        "68d4209e91c5ab19193c6ee0"
+      ],
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    }
+  ],
+  "variables": [
+    {
+      "id": "68d220aafdf725db2fd4207c",
+      "name": "reply",
+      "createdByID": 1772631,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "sessions",
+      "name": "sessions",
+      "createdByID": 1772631,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The number of times a particular user has opened the app.",
+      "defaultValue": null,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "user_id",
+      "name": "user_id",
+      "createdByID": 1772631,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's unique ID.",
+      "defaultValue": null,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "timestamp",
+      "name": "timestamp",
+      "createdByID": 1772631,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "UNIX timestamp (number of seconds since January 1st, 1970 at UTC).",
+      "defaultValue": null,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "platform",
+      "name": "platform",
+      "createdByID": 1772631,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The platform your agent is running on (e.g. \"voiceflow\").",
+      "defaultValue": null,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "locale",
+      "name": "locale",
+      "createdByID": 1772631,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The locale of the user (eg. en-US, en-CA, it-IT, fr-FR, ...).",
+      "defaultValue": null,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "intent_confidence",
+      "name": "intent_confidence",
+      "createdByID": 1772631,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The confidence interval (measured as a value from 0 to 100) for the most recently matched intent.",
+      "defaultValue": null,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "last_response",
+      "name": "last_response",
+      "createdByID": 1772631,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The agent's last response (text/speak) in a string.",
+      "defaultValue": null,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "last_event",
+      "name": "last_event",
+      "createdByID": 1772631,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "any",
+      "description": "The object containing the last event that the user client has triggered.",
+      "defaultValue": null,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "last_utterance",
+      "name": "last_utterance",
+      "createdByID": 1772631,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's last utterance in a text string.",
+      "defaultValue": null,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "vf_memory",
+      "name": "vf_memory",
+      "createdByID": 1772631,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "Last 10 user inputs and agent responses in a string (e.g. \"agent: How can i help?\"\nuser: What's the weather today?).",
+      "defaultValue": null,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68c0bf2b776dfb451768f87b",
+      "name": "stock_symbol",
+      "createdByID": 1772631,
+      "folderID": null,
+      "color": "#5B9FD7",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68c0c151776dfb451768f8e9",
+      "name": "api_response",
+      "createdByID": 1772631,
+      "folderID": null,
+      "color": "#DC8879",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68c0ce5b776dfb451768fc50",
+      "name": "stock_price",
+      "createdByID": 1772631,
+      "folderID": null,
+      "color": "#d182b6",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68d23c1afdf725db2fd427ff",
+      "name": "departamentos",
+      "createdByID": 1772631,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    }
+  ],
+  "workflows": [
+    {
+      "id": "66df755be937eb000784abb2",
+      "name": "Start workflow",
+      "createdByID": 1772631,
+      "folderID": null,
+      "status": null,
+      "isStart": true,
+      "diagramID": "68c0b73a68a36a00076fc3e0",
+      "assigneeID": null,
+      "description": "",
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    }
+  ],
+  "attachments": [],
+  "cardButtons": [],
+  "prompts": [
+    {
+      "id": "68c184bc5276695054c8fd03",
+      "name": "Untitled prompt",
+      "createdByID": 1772631,
+      "folderID": null,
+      "description": null,
+      "settings": {
+        "useStructuredOutput": false
+      },
+      "messageOrder": [
+        "68c184bc5276695054c8fd04",
+        "68c184bc5276695054c8fd05"
+      ],
+      "draft": false,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    }
+  ],
+  "promptMessages": [
+    {
+      "id": "68c184bc5276695054c8fd04",
+      "promptID": "68c184bc5276695054c8fd03",
+      "pairID": null,
+      "type": "role",
+      "data": {
+        "role": "system",
+        "content": [
+          {
+            "text": [
+              ""
+            ]
+          }
+        ]
+      },
+      "createdAt": "2025-09-10T14:01:32.000Z"
+    },
+    {
+      "id": "68c184bc5276695054c8fd05",
+      "promptID": "68c184bc5276695054c8fd03",
+      "pairID": null,
+      "type": "role",
+      "data": {
+        "role": "user",
+        "content": [
+          {
+            "text": [
+              ""
+            ]
+          }
+        ]
+      },
+      "createdAt": "2025-09-10T14:01:32.000Z"
+    }
+  ],
+  "events": [],
+  "agents": [
+    {
+      "id": "68c0b73a68a36a00076fc3c9",
+      "name": "Descubrir la intención sobre corredor de bolsa",
+      "createdByID": 1772631,
+      "folderID": null,
+      "settings": {
+        "model": "claude-4-sonnet",
+        "maxTokens": 5000,
+        "temperature": 0.3
+      },
+      "description": null,
+      "instructions": [
+        {
+          "text": [
+            "Saluda al usuario y pídele que explique específicamente qué desea saber o hacer relacionado con un corredor de bolsa (por ejemplo: información sobre la profesión, cómo convertirse en uno, abrir cuenta, comparar brokers, etc.). Si la solicitud es vaga o ambigua, pide clarificación."
+          ]
+        }
+      ],
+      "pathToolOrder": [
+        "68c0b73a68a36a00076fc3d0",
+        "68c0b73a68a36a00076fc3d1",
+        "68c0b73a68a36a00076fc3d2",
+        "68c0b73a68a36a00076fc3d3",
+        "68c0b73a68a36a00076fc3d4"
+      ],
+      "webSearchTool": null,
+      "knowledgeBaseTool": null,
+      "buttonTool": null,
+      "cardTool": null,
+      "carouselTool": null,
+      "callForwardTool": null,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68c0b73a68a36a00076fc3ca",
+      "name": "Brindar información general sobre corredor de bolsa",
+      "createdByID": 1772631,
+      "folderID": null,
+      "settings": {
+        "model": "claude-4-sonnet",
+        "maxTokens": 5000,
+        "temperature": 0.3
+      },
+      "description": null,
+      "instructions": [
+        {
+          "text": [
+            "Explica qué es un corredor de bolsa, el rol que cumple y conceptos básicos relevantes. Utiliza información actualizada y confiable. Si el usuario pide temas más específicos, deriva al agente correspondiente."
+          ]
+        }
+      ],
+      "pathToolOrder": [
+        "68c0b73a68a36a00076fc3d5",
+        "68c0b73a68a36a00076fc3d6"
+      ],
+      "webSearchTool": null,
+      "knowledgeBaseTool": {
+        "enabled": true,
+        "description": "Searches an external knowledge base to retrieve relevant information, supplementing or replacing the language model's internal context."
+      },
+      "buttonTool": null,
+      "cardTool": null,
+      "carouselTool": null,
+      "callForwardTool": null,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68c0b73a68a36a00076fc3cb",
+      "name": "Explicar cómo convertirse en corredor de bolsa",
+      "createdByID": 1772631,
+      "folderID": null,
+      "settings": {
+        "model": "claude-4-sonnet",
+        "maxTokens": 5000,
+        "temperature": 0.3
+      },
+      "description": null,
+      "instructions": [
+        {
+          "text": [
+            "Describe los pasos, requisitos educativos, certificaciones y procesos para ser corredor de bolsa en la región del usuario si es posible. Aclara posibles regulaciones nacionales. Si el usuario quiere ayuda con un caso particular, indícalo."
+          ]
+        }
+      ],
+      "pathToolOrder": [
+        "68c0b73a68a36a00076fc3d7",
+        "68c0b73a68a36a00076fc3d8"
+      ],
+      "webSearchTool": null,
+      "knowledgeBaseTool": {
+        "enabled": true,
+        "description": "Searches an external knowledge base to retrieve relevant information, supplementing or replacing the language model's internal context."
+      },
+      "buttonTool": null,
+      "cardTool": null,
+      "carouselTool": null,
+      "callForwardTool": null,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68c0b73a68a36a00076fc3cc",
+      "name": "Asistir para abrir cuenta con un corredor de bolsa",
+      "createdByID": 1772631,
+      "folderID": null,
+      "settings": {
+        "model": "claude-4-sonnet",
+        "maxTokens": 5000,
+        "temperature": 0.3
+      },
+      "description": null,
+      "instructions": [
+        {
+          "text": [
+            "Orienta al usuario sobre los pasos, documentación, y consideraciones para abrir una cuenta con un corredor de bolsa. Si el usuario menciona una entidad o corredor específico, ofrece información o pasos adaptados a esa opción."
+          ]
+        }
+      ],
+      "pathToolOrder": [
+        "68c0b73a68a36a00076fc3d9",
+        "68c0b73a68a36a00076fc3da"
+      ],
+      "webSearchTool": null,
+      "knowledgeBaseTool": {
+        "enabled": true,
+        "description": "Searches an external knowledge base to retrieve relevant information, supplementing or replacing the language model's internal context."
+      },
+      "buttonTool": null,
+      "cardTool": null,
+      "carouselTool": null,
+      "callForwardTool": null,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68c0b73a68a36a00076fc3cd",
+      "name": "Comparar corredores de bolsa",
+      "createdByID": 1772631,
+      "folderID": null,
+      "settings": {
+        "model": "claude-4-sonnet",
+        "maxTokens": 5000,
+        "temperature": 0.3
+      },
+      "description": null,
+      "instructions": [
+        {
+          "text": [
+            "Recoge los criterios del usuario (tarifas, plataformas, reputación, regulaciones, etc.) y ofrece una comparación básica de diferentes corredores de bolsa. Sugiere también fuentes confiables para ampliar la comparación si lo solicita."
+          ]
+        }
+      ],
+      "pathToolOrder": [
+        "68c0b73a68a36a00076fc3db",
+        "68c0b73a68a36a00076fc3dc",
+        "68c0b73a68a36a00076fc3dd"
+      ],
+      "webSearchTool": null,
+      "knowledgeBaseTool": {
+        "enabled": true,
+        "description": "Searches an external knowledge base to retrieve relevant information, supplementing or replacing the language model's internal context."
+      },
+      "buttonTool": null,
+      "cardTool": null,
+      "carouselTool": null,
+      "callForwardTool": null,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68c0b73a68a36a00076fc3ce",
+      "name": "Solicitud sobre corredor de bolsa satisfecha",
+      "createdByID": 1772631,
+      "folderID": null,
+      "settings": {
+        "model": "claude-4-sonnet",
+        "maxTokens": 5000,
+        "temperature": 0.3
+      },
+      "description": null,
+      "instructions": [
+        {
+          "text": [
+            "Despídete cordialmente, confirma que la consulta fue resuelta y ofrece ayuda futura en temas similares."
+          ]
+        }
+      ],
+      "pathToolOrder": [
+        "68c0b73a68a36a00076fc3de"
+      ],
+      "webSearchTool": null,
+      "knowledgeBaseTool": null,
+      "buttonTool": null,
+      "cardTool": null,
+      "carouselTool": null,
+      "callForwardTool": null,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    },
+    {
+      "id": "68c0b73a68a36a00076fc3cf",
+      "name": "No se pudo satisfacer la solicitud",
+      "createdByID": 1772631,
+      "folderID": null,
+      "settings": {
+        "model": "claude-4-sonnet",
+        "maxTokens": 5000,
+        "temperature": 0.3
+      },
+      "description": null,
+      "instructions": [
+        {
+          "text": [
+            "Indica lamentar no poder ayudar debido a la falta de claridad o relevancia en la solicitud. Sugiere replantear o aclarar la consulta en el futuro."
+          ]
+        }
+      ],
+      "pathToolOrder": [
+        "68c0b73a68a36a00076fc3df"
+      ],
+      "webSearchTool": null,
+      "knowledgeBaseTool": null,
+      "buttonTool": null,
+      "cardTool": null,
+      "carouselTool": null,
+      "callForwardTool": null,
+      "createdAt": "2025-09-25T00:50:10.000Z",
+      "updatedAt": "2025-09-25T00:50:10.000Z",
+      "updatedByID": 1772631
+    }
+  ],
+  "agentAPITools": [],
+  "agentPathTools": [
+    {
+      "id": "68c0b73a68a36a00076fc3d0",
+      "name": "Quiere información general sobre corredor de bolsa",
+      "agentID": "68c0b73a68a36a00076fc3c9",
+      "description": "El usuario pide una descripción o explicación de la profesión de corredor de bolsa.",
+      "variableOrder": [],
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68c0b73a68a36a00076fc3d1",
+      "name": "Quiere saber cómo convertirse en corredor de bolsa",
+      "agentID": "68c0b73a68a36a00076fc3c9",
+      "description": "El usuario busca información sobre los pasos y requisitos para ejercer como corredor de bolsa.",
+      "variableOrder": [],
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68c0b73a68a36a00076fc3d2",
+      "name": "Busca asesoría para abrir cuenta con un corredor de bolsa",
+      "agentID": "68c0b73a68a36a00076fc3c9",
+      "description": "El usuario solicita ayuda para abrir una cuenta con algún corredor de bolsa específico.",
+      "variableOrder": [],
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68c0b73a68a36a00076fc3d3",
+      "name": "Quiere comparar corredores de bolsa",
+      "agentID": "68c0b73a68a36a00076fc3c9",
+      "description": "El usuario pide ayuda para comparar diferentes corredores de bolsa.",
+      "variableOrder": [],
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68c0b73a68a36a00076fc3d4",
+      "name": "Solicitud no relacionada o no se aclara",
+      "agentID": "68c0b73a68a36a00076fc3c9",
+      "description": "La intención del usuario sigue sin estar clara o no está relacionada con corredor de bolsa.",
+      "variableOrder": [],
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68c0b73a68a36a00076fc3d5",
+      "name": "Usuario satisfecho con la información",
+      "agentID": "68c0b73a68a36a00076fc3ca",
+      "description": "El usuario confirma que la información proporcionada es suficiente.",
+      "variableOrder": [],
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68c0b73a68a36a00076fc3d6",
+      "name": "Solicita información más detallada o diferente",
+      "agentID": "68c0b73a68a36a00076fc3ca",
+      "description": "El usuario busca otros detalles o cambia de enfoque respecto a la conversación.",
+      "variableOrder": [],
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68c0b73a68a36a00076fc3d7",
+      "name": "Usuario conforme con los pasos y requisitos",
+      "agentID": "68c0b73a68a36a00076fc3cb",
+      "description": "El usuario indica que la explicación fue suficiente y se resuelven sus dudas.",
+      "variableOrder": [],
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68c0b73a68a36a00076fc3d8",
+      "name": "Dudas adicionales o cambio de tema",
+      "agentID": "68c0b73a68a36a00076fc3cb",
+      "description": "El usuario quiere detalles adicionales u otra información sobre corredores de bolsa.",
+      "variableOrder": [],
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68c0b73a68a36a00076fc3d9",
+      "name": "Usuario tiene claro cómo proceder",
+      "agentID": "68c0b73a68a36a00076fc3cc",
+      "description": "El usuario confirma que sabe cómo dar el siguiente paso para abrir la cuenta.",
+      "variableOrder": [],
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68c0b73a68a36a00076fc3da",
+      "name": "Solicita comparación o asesoría extra",
+      "agentID": "68c0b73a68a36a00076fc3cc",
+      "description": "El usuario quiere comparar corredores antes de decidir con cuál abrir la cuenta.",
+      "variableOrder": [],
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68c0b73a68a36a00076fc3db",
+      "name": "Usuario encontró un corredor de su preferencia",
+      "agentID": "68c0b73a68a36a00076fc3cd",
+      "description": "El usuario decide con qué corredor abrir cuenta, requiere guía para ello.",
+      "variableOrder": [],
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68c0b73a68a36a00076fc3dc",
+      "name": "Usuario satisfecho con la comparación",
+      "agentID": "68c0b73a68a36a00076fc3cd",
+      "description": "El usuario está satisfecho con la comparación y no requiere pasos adicionales.",
+      "variableOrder": [],
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68c0b73a68a36a00076fc3dd",
+      "name": "Solicita información o tema diferente",
+      "agentID": "68c0b73a68a36a00076fc3cd",
+      "description": "El usuario desea explorar otro aspecto sobre corredor de bolsa.",
+      "variableOrder": [],
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68c0b73a68a36a00076fc3de",
+      "name": "Finalizar la conversación",
+      "agentID": "68c0b73a68a36a00076fc3ce",
+      "description": "Todo está resuelto y no queda nada pendiente.",
+      "variableOrder": [],
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    },
+    {
+      "id": "68c0b73a68a36a00076fc3df",
+      "name": "Finalizar la conversación",
+      "agentID": "68c0b73a68a36a00076fc3cf",
+      "description": "No fue posible ayudar al usuario.",
+      "variableOrder": [],
+      "createdAt": "2025-09-25T00:50:10.000Z"
+    }
+  ],
+  "agentFunctionTools": [],
+  "agentIntegrationTools": [],
+  "agentPathToolVariables": [],
+  "agentMcpIntegrationTools": [],
+  "apiTools": [],
+  "apiToolInputVariables": [],
+  "integrationTools": [],
+  "functions": [],
+  "functionPaths": [],
+  "functionVariables": [],
+  "mcpServers": [],
+  "mcpServerTools": [],
+  "mcpIntegrationTools": [],
+  "project": {
+    "type": "chat",
+    "name": "Agente Informativo de Graficas de Accidentes",
+    "image": "",
+    "teamID": "OoEKbrx9na",
+    "members": [],
+    "privacy": "private",
+    "platform": "webchat",
+    "_version": 1.2,
+    "linkType": "STRAIGHT",
+    "creatorID": 1772631,
+    "updatedBy": 1772631,
+    "apiPrivacy": "public",
+    "platformData": {
+      "invocationName": "template project general"
+    },
+    "customThemes": [
+      {
+        "name": "",
+        "palette": {
+          "50": "#ccf7ee",
+          "100": "#a6f1e3",
+          "200": "#9be2d4",
+          "300": "#91d3c6",
+          "400": "#80bcb1",
+          "500": "#70a59b",
+          "600": "#5f8c84",
+          "700": "#4a6f68",
+          "800": "#35514b",
+          "900": "#1f322e"
+        },
+        "standardColor": "#70a59b"
+      },
+      {
+        "name": "",
+        "palette": {
+          "50": "#cff7e5",
+          "100": "#a8f2d4",
+          "200": "#99e3c6",
+          "300": "#8fd5b9",
+          "400": "#7fbda4",
+          "500": "#6fa690",
+          "600": "#5e8d7a",
+          "700": "#497060",
+          "800": "#345146",
+          "900": "#1e322a"
+        },
+        "standardColor": "#6fa690"
+      },
+      {
+        "name": "",
+        "palette": {
+          "50": "#cbf7f0",
+          "100": "#a6f0e6",
+          "200": "#9be1d8",
+          "300": "#91d3ca",
+          "400": "#81bbb4",
+          "500": "#71a59e",
+          "600": "#5f8c86",
+          "700": "#4a6f6a",
+          "800": "#35504d",
+          "900": "#1f322f"
+        },
+        "standardColor": "#71a59e"
+      },
+      {
+        "name": "",
+        "palette": {
+          "50": "#f6ebf2",
+          "100": "#f1dde9",
+          "200": "#eaccdf",
+          "300": "#e4bbd4",
+          "400": "#da9fc5",
+          "500": "#d182b6",
+          "600": "#c064a2",
+          "700": "#994e81",
+          "800": "#70385e",
+          "900": "#47213b"
+        },
+        "standardColor": "#d182b6"
+      }
+    ],
+    "aiAssistSettings": {
+      "aiPlayground": true
+    },
+    "_id": "68d491c20944f0a2bdc2cb45",
+    "updatedAt": "2025-09-25T00:50:10.329Z",
+    "devVersion": "68d491c20944f0a2bdc2cb46",
+    "liveVersion": "68d491c20944f0a2bdc2cb47",
+    "stagingVersion": "68d4aef30944f0a2bdc3d49b"
+  },
+  "_version": "1.2",
+  "secrets": [],
+  "variableStates": [],
+  "transcriptEvaluations": [
+    {
+      "name": "AI summary",
+      "default": true,
+      "description": null,
+      "type": "string",
+      "enabled": false,
+      "prompt": "Look at the transcript and provide a brief summary of the conversation. Make sure to highlight the outcome of the conversation, and key moments or topics, and the overall tone of the customer.",
+      "settings": null
+    },
+    {
+      "name": "Deflection rate",
+      "default": true,
+      "description": null,
+      "type": "boolean",
+      "enabled": false,
+      "prompt": "Determine if the user requested to talk to a human in order to achieve their desired outcome.",
+      "settings": null,
+      "truePrompt": "The user did not require the need to talk to a human.",
+      "falsePrompt": "The user required the need to talk to a human agent."
+    },
+    {
+      "name": "Satisfaction score",
+      "default": true,
+      "description": null,
+      "type": "number",
+      "enabled": false,
+      "prompt": "Rate the user's overall satisfaction based on the conversation, using a scale from 1 to 5.",
+      "settings": null,
+      "minimumValue": 1,
+      "minimumPrompt": "Look for negative comments or expressions of dissatisfaction to rate the minimum satisfaction.",
+      "maximumValue": 5,
+      "maximumPrompt": "Identify any comments or phrases in the transcript that express the highest level of satisfaction."
+    }
+  ]
+}
